@@ -1,5 +1,6 @@
 package com.example.testrest2dbh2.dao;
 
+import com.example.testrest2dbh2.entity.Student;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -10,7 +11,7 @@ import java.util.List;
 
 @Slf4j
 @Repository
-public class StudentDAOlmpl implements StudentDAO {
+public class StudentDAOImpl implements StudentDAO {
 
     @Autowired
     private EntityManager entityManager;

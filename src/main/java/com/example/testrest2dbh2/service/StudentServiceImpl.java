@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
-public class StudentServicelmpl implements StudentService {
+public class StudentServiceImpl implements StudentService{
 
     @Autowired
     private StudentDAO studentDAO;
@@ -19,6 +19,7 @@ public class StudentServicelmpl implements StudentService {
     public List<Student> getAllStudents() {
         return studentDAO.getAllStudents();
     }
+
 
 
     @Override
